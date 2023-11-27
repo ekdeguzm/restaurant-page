@@ -1,1 +1,1 @@
-alert("hello");
+(()=>{"use strict";(()=>{const e=document.querySelector("#content"),t=document.createElement("div");t.classList.add("page-content");const n=document.createElement("img");n.src="../dist/images/background.jpg",n.height="300",t.appendChild(n);const c=document.createElement("h1");c.textContent="Welcome to Pizza Town!",t.appendChild(c);const o=document.createElement("p");o.textContent="We serve the best pizza in town. Come and take a bite!",t.appendChild(o),e.appendChild(t)})()})();

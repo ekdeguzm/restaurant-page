@@ -5,5 +5,7 @@ const createContactPage = () => {
   const pageContent = document.createElement('div')
   pageContent.classList.add('page-content');
 
-  
+
 }
+
+export default createContactPage;

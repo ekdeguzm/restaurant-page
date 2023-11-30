@@ -4,6 +4,7 @@ import createContactPage from "./contact";
 import createMenuPage from "./menu";
 import createRestaurantHomePage from "./restaurant";
 
+
 const createTabs = () => {
   const content = document.querySelector('#content');
 

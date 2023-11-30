@@ -6,16 +6,16 @@ const createRestaurantHomePage = () => {
   pageContent.classList.add('page-content')
 
 
+  // Create and append headline element
+  const headline = document.createElement('h1');
+  headline.textContent = 'Welcome to Pizza Town!';
+  pageContent.appendChild(headline);
+
   // Create and append image element
   const image = document.createElement('img');
   image.src = '../dist/images/background.jpg';
   image.height = '300'
   pageContent.appendChild(image);
-
-  // Create and append headline element
-  const headline = document.createElement('h1');
-  headline.textContent = 'Welcome to Pizza Town!';
-  pageContent.appendChild(headline);
 
   // Create and append copy element
   const copy = document.createElement('p');

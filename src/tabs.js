@@ -1,8 +1,11 @@
 // create tabs at the top of the page
 
+import createContactPage from "./contact";
+import createMenuPage from "./menu";
+import createRestaurantHomePage from "./restaurant";
+
 const createTabs = () => {
   const content = document.querySelector('#content');
-
 
   // create the three divs
   const div1 = document.createElement('div');
@@ -28,6 +31,16 @@ const createTabs = () => {
   content.appendChild(div1)
   content.appendChild(div2)
   content.appendChild(div3)
+
+  div1.addEventListener('click', () => {
+    createRestaurantHomePage();
+  })
+  div2.addEventListener('click', () => {
+    createMenuPage();
+  })
+  div3.addEventListener('click', () => {
+    createContactPage();
+  })
 }
 
 export default createTabs;

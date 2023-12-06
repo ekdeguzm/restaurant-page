@@ -8,6 +8,10 @@ import createRestaurantHomePage from "./restaurant";
 const createTabs = () => {
   const content = document.querySelector('#content');
 
+  // Create the container div for tabs
+  const tabContainer = document.createElement('div');
+  tabContainer.classList.add('tab-container'); // Add the tab-container class
+
   // create the three divs
   const div1 = document.createElement('div');
   const div2 = document.createElement('div');
@@ -28,10 +32,13 @@ const createTabs = () => {
   div2.textContent = 'Menu';
   div3.textContent = 'Contact';
 
-  // append the divs to the content div
-  content.appendChild(div1)
-  content.appendChild(div2)
-  content.appendChild(div3)
+  // append the divs to the tabContainer div
+  tabContainer.appendChild(div1);
+  tabContainer.appendChild(div2);
+  tabContainer.appendChild(div3);
+
+  // append the tabContainer to the content div
+  content.appendChild(tabContainer);
 
   div1.addEventListener('click', () => {
     clearContent();

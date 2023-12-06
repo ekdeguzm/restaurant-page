@@ -1,3 +1,10 @@
+/* Assuming your tab container has a class like 'tab-container' */
+.tab-container {
+  display: flex;
+  justify-content: center; /* Center tabs horizontally */
+  /* align-items: center; Center tabs vertically */
+}
+
 .tab {
   display: inline-block;
   padding: 8px 16px;
@@ -8,6 +15,7 @@
   margin-bottom: 30px;
 }
 
+/* Rest of your existing CSS for .contact-form, input, h1, img, and p */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -37,10 +45,12 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-h1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+h1, img, p {
   text-align: center;
 }
+
+pageContent {
+  text-align: center;
+}
+
 

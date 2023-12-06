@@ -4,13 +4,13 @@ import createContactPage from "./contact";
 import createMenuPage from "./menu";
 import createRestaurantHomePage from "./restaurant";
 
-
 const createTabs = () => {
   const content = document.querySelector('#content');
 
   // Create the container div for tabs
   const tabContainer = document.createElement('div');
   tabContainer.classList.add('tab-container'); // Add the tab-container class
+  console.log('Tab container created!')
 
   // create the three divs
   const div1 = document.createElement('div');
@@ -43,17 +43,16 @@ const createTabs = () => {
   div1.addEventListener('click', () => {
     clearContent();
     createRestaurantHomePage();
-  })
+  });
   div2.addEventListener('click', () => {
     clearContent();
     createMenuPage();
-  })
+  });
   div3.addEventListener('click', () => {
     clearContent();
     createContactPage();
-  })
-}
-
+  });
+};
 
 function clearContent() {
   const content = document.querySelector("#content");

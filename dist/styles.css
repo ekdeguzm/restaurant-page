@@ -28,6 +28,30 @@ body {
   opacity: 1;
 }
 
+#home-btn {
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+#menu-btn {
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+#contact-btn {
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
 /* Rest of your existing CSS for .contact-form, input, h1, img, and p */
 .contact-form {
   display: flex;

@@ -2,13 +2,12 @@
 .tab-container {
   display: flex;
   justify-content: center; /* Center tabs horizontally */
-  /* align-items: center; Center tabs vertically */
+  align-items: center;
   padding: 40px;
   background-color: black;
   margin: 0px;
-  opacity: 0.3;
-  z-index: 0; /* set higher z-index value */
-  position: relative; /* position must be set for z-index to work */
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.5);
   
 }
 
@@ -36,24 +35,27 @@ body {
   padding: 2rem;
   font-size: 1.5rem;
   background-color: transparent;
-  border-bottom: 2px solid transparent;
+  border: 2px transparent;
   transition: transform 0.3s;
+  color: white;
 }
 
 #menu-btn {
   padding: 2rem;
   font-size: 1.5rem;
   background-color: transparent;
-  border-bottom: 2px solid transparent;
+  border: 2px transparent;
   transition: transform 0.3s;
+  color: white;
 }
 
 #contact-btn {
   padding: 2rem;
   font-size: 1.5rem;
   background-color: transparent;
-  border-bottom: 2px solid transparent;
+  border: 2px transparent;
   transition: transform 0.3s;
+  color: white;
 }
 
 /* Rest of your existing CSS for .contact-form, input, h1, img, and p */
@@ -96,8 +98,8 @@ img {
 }
 
 .page-content {
-  background-color: black;
-  opacity: 0.3;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 

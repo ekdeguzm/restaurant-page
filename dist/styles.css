@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center; /* Center tabs horizontally */
   /* align-items: center; Center tabs vertically */
+  padding: 40px;
+  background-color: black;
+  margin: 0px;
+  opacity: 0.3;
+  
 }
 
 body {
@@ -20,6 +25,7 @@ body {
   cursor: pointer;
   margin-bottom: 30px;
   background-color: white;
+  opacity: 1;
 }
 
 /* Rest of your existing CSS for .contact-form, input, h1, img, and p */

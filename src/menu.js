@@ -7,6 +7,10 @@ function createMenuPage() {
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
+  // create menu heading
+  const heading = document.createElement('h1');
+  heading.textContent = ('Our Menu');
+
   menu.appendChild(
     createMenuItem(
       "Salsiccia",
@@ -55,7 +59,8 @@ function createMenuPage() {
       "Tomato sauce, Mozarella, Homemade sausage, Bacon, Garlic, Pepper, Chilli"
     )
   );
-
+  
+  pageContent.appendChild(heading);
   pageContent.appendChild(menu)
 
   return pageContent;

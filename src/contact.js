@@ -8,6 +8,17 @@ const createContactPage = () => {
   const form = document.createElement('form');
   form.classList.add('contact-form');
 
+  const contact = document.createElement('div')
+  contact.classList.add('contact')
+
+  const phoneNumber = document.createElement('p')
+  phoneNumber.textContent = '📞 123 456 789'
+  form.appendChild(phoneNumber)
+
+  const address = document.createElement('p')
+  address.textContent = '🏠 Golden Gate Street. 42, San Francisco, USA'
+  form.appendChild(address)
+
   const headingInput = document.createElement('input');
   headingInput.type = 'text';
   headingInput.placeholder = 'Enter heading';

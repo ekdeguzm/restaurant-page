@@ -1,6 +1,9 @@
 // module for creating the menu page
 
 function createMenuPage() {
+  const content = document.querySelector('#content');
+  const pageContent = document.createElement('div');
+  pageContent.classList.add('page-content');
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
@@ -53,7 +56,9 @@ function createMenuPage() {
     )
   );
 
-  return menu;
+  pageContent.appendChild(menu)
+
+  return pageContent;
 }
 
 function createMenuItem(name, description) {
@@ -79,11 +84,14 @@ function createMenuItem(name, description) {
 
 function loadMenu() {
   const content = document.getElementById("content");
-  content.textContent = "";
+  // content.textContent = "";
+  // content.appendChild(pageContent);
   content.appendChild(createMenuPage());
 }
 
 export default loadMenu;
+
+
 
 // const createMenuPage = () => {
 //   // select for content id and create pageContent

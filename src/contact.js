@@ -19,6 +19,11 @@ const createContactPage = () => {
   address.textContent = '🏠 Golden Gate Street. 42, San Francisco, USA'
   form.appendChild(address)
 
+  const restaurantLocation = document.createElement('img')
+  restaurantLocation.src = '../dist/images/restaurant-location.png'
+  restaurantLocation.alt = 'Pizza Town\'s restaurant location'
+  form.appendChild(restaurantLocation)
+
   const headingInput = document.createElement('input');
   headingInput.type = 'text';
   headingInput.placeholder = 'Enter heading';

@@ -1,9 +1,10 @@
 /* Assuming your tab container has a class like 'tab-container' */
 .tab-container {
+  vertical-align: bottom;
   display: flex;
   justify-content: center; /* Center tabs horizontally */
-  align-items: center;
-  padding: 40px;
+  align-items;
+  padding: 20px;
   background-color: black;
   margin: 0px;
   background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
@@ -18,6 +19,32 @@ body {
   background-size: cover;
 }
 
+
+button {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+}
+
+.button-nav {
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+.tab.active {
+  border-bottom: 2px solid var(--font-color);
+}
+
+.tab:hover {
+  transform: translateY(-10%);
+  /* transform: scale(1.2); */
+}
+
 .tab {
   display: inline-block;
   padding: 8px 16px;
@@ -25,7 +52,7 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   background-color: white;
   opacity: 1;
   z-index: 10; /* set higher z-index value */
@@ -89,7 +116,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-h1, img, p, ul, li {
+h1, h2, img, p, ul, li {
   text-align: center;
   color: white;
 }
@@ -100,6 +127,7 @@ img {
 }
 
 .page-content {
+  overflow:auto;
   margin-left:auto;
   margin-right:auto;
   background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
@@ -118,4 +146,22 @@ img {
 
 .contact-form img {
   width: 40rem;
+}
+
+/* footer */
+
+.footer {
+  
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
 }

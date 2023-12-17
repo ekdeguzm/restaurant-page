@@ -104,15 +104,16 @@ img {
   margin-right:auto;
   background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
   background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  height: 429.875px;
+  height: 600px;
 }
 
-.contact-form {
+.contact-form  p {
   font-family: 'Tangerine', cursive;
   margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .contact-form img {

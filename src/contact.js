@@ -24,25 +24,6 @@ const createContactPage = () => {
   restaurantLocation.alt = 'Pizza Town\'s restaurant location'
   form.appendChild(restaurantLocation)
 
-  const headingInput = document.createElement('input');
-  headingInput.type = 'text';
-  headingInput.placeholder = 'Enter heading';
-  form.appendChild(headingInput);
-
-  const addressInput = document.createElement('input');
-  addressInput.type = 'text';
-  addressInput.placeholder = 'Enter address';
-  form.appendChild(addressInput);
-
-  const phoneInput = document.createElement('input');
-  phoneInput.type = 'text';
-  phoneInput.placeholder = 'Enter phone';
-  form.appendChild(phoneInput);
-
-  const submitButton = document.createElement('input');
-  submitButton.type = 'submit';
-  submitButton.placeholder = 'Submit'
-  form.appendChild(submitButton);
 
   pageContent.appendChild(form);
   content.appendChild(pageContent)

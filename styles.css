@@ -112,5 +112,9 @@ img {
 
 .contact-form {
   font-family: 'Tangerine', cursive;
+  margin-top: 0rem;
 }
 
+.contact-form img {
+  width: 40rem;
+}

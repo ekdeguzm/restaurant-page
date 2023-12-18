@@ -94,6 +94,41 @@ button {
   justify-content: center;
 }
 
+/* menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-item {
+  width: 45%; /* Set the width of each menu item to 45% for two items in a row */
+  margin-bottom: 20px;
+}
+
+/* Add this CSS for better styling and spacing */
+.menu-item h2 {
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  margin-bottom: 10px;
+}
+
+/* Add this CSS to style the images */
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for a rounded corner effect */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .menu-item {
+    width: 100%; /* Set the width to 100% for single column on smaller screens */
+  }
+}
+
 input {
   margin: 10px;
   padding: 5px;

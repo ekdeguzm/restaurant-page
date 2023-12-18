@@ -21,6 +21,10 @@ const createRestaurantHomePage = () => {
   const copy = document.createElement('p');
   copy.textContent = 'We serve the best pizza in town. Come and take a bite!';
   pageContent.appendChild(copy);
+
+  const date = document.createElement('p');
+  date.textContent = 'Made with passion since 1903';
+  pageContent.appendChild(date);
   content.appendChild(pageContent);
 }
 

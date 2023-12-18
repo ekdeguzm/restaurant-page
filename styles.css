@@ -173,11 +173,13 @@ img {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 600px;
+  width: 45%;
 }
 
 .page-content p {
   font-size: larger;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 .page-content h1 {
   font-size: xx-large;

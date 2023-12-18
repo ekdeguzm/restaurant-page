@@ -1,4 +1,4 @@
-/* Assuming your tab container has a class like 'tab-container' */
+/* Tab Container Styles */
 .tab-container {
   vertical-align: bottom;
   display: flex;
@@ -9,9 +9,9 @@
   margin: 0px;
   background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
   background: rgba(0, 0, 0, 0.5);
-  
 }
 
+/* Body Styles */
 body {
   font-family: 'Montserrat', cursive;
   background-image: url('../dist/images/background.jpg');
@@ -19,7 +19,7 @@ body {
   background-size: cover;
 }
 
-
+/* Button Styles */
 button {
   font-family: inherit;
   color: inherit;
@@ -59,24 +59,9 @@ button {
   position: relative; /* position must be set for z-index to work */
 }
 
-#home-btn {
-  padding: 2rem;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: 2px transparent;
-  transition: transform 0.3s;
-  color: white;
-}
-
-#menu-btn {
-  padding: 2rem;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: 2px transparent;
-  transition: transform 0.3s;
-  color: white;
-}
-
+/* Button-specific Styles */
+#home-btn,
+#menu-btn,
 #contact-btn {
   padding: 2rem;
   font-size: 1.5rem;
@@ -86,7 +71,7 @@ button {
   color: white;
 }
 
-/* Rest of your existing CSS for .contact-form, input, h1, img, and p */
+/* Contact Form Styles */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -94,7 +79,19 @@ button {
   justify-content: center;
 }
 
-/* menu */
+.contact-form p {
+  font-family: 'Tangerine', cursive;
+  font-size: larger;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form img {
+  margin-top: 1rem;
+  width: 40rem;
+}
+
+/* Menu Styles */
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +104,7 @@ button {
   margin-right: 5px; /* Add margin-right to reduce space between items */
 }
 
-/* Add this CSS for better styling and spacing */
+/* Additional Styling for Menu Item Content */
 .menu-item h2 {
   margin-bottom: 10px;
 }
@@ -116,21 +113,20 @@ button {
   margin-bottom: 10px;
 }
 
-/* Add this CSS to style the images */
 .menu-item img {
   max-width: 100%;
   height: auto;
   border-radius: 8px; /* Add border-radius for a rounded corner effect */
 }
 
-
-/* Media query for responsiveness */
+/* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .menu-item {
-    width: 100%; /* Set the width to 100% for single column on smaller screens */
+    width: 100%; /* Set the width to 100% for a single column on smaller screens */
   }
 }
 
+/* Input Styles */
 input {
   margin: 10px;
   padding: 5px;
@@ -153,7 +149,13 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-h1, h2, img, p, ul, li {
+/* General Text Styles */
+h1,
+h2,
+img,
+p,
+ul,
+li {
   text-align: center;
   color: white;
 }
@@ -163,10 +165,11 @@ img {
   margin: 0 auto;
 }
 
+/* Page Content Styles */
 .page-content {
-  overflow:auto;
-  margin-left:auto;
-  margin-right:auto;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
   background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
@@ -181,24 +184,12 @@ img {
   margin-top: 2rem;
   margin-bottom: 0rem;
 }
+
 .page-content h1 {
   font-size: xx-large;
 }
 
-
-.contact-form  p {
-  font-family: 'Tangerine', cursive;
-  font-size:larger;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-}
-
-.contact-form img {
-  width: 40rem;
-}
-
-/* footer */
-
+/* Footer Styles */
 .footer {
   font-family: 'Courier New', Courier, monospace;
   background-color: #333;
@@ -216,6 +207,7 @@ img {
   width: 100%;
 }
 
+/* Remove Default Paragraph Margins */
 p {
   display: block;
   margin-block-start: 0em;

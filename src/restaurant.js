@@ -13,7 +13,7 @@ const createRestaurantHomePage = () => {
 
   // Create and append image element
   const image = document.createElement('img');
-  image.src = './dist/images/chef.jpg';
+  image.src = './images/chef.jpg';
   image.height = '300'
   pageContent.appendChild(image);
 

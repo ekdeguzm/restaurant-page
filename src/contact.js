@@ -20,7 +20,7 @@ const createContactPage = () => {
   form.appendChild(address)
 
   const restaurantLocation = document.createElement('img')
-  restaurantLocation.src = '../dist/images/restaurant-location.png'
+  restaurantLocation.src = './dist/images/restaurant-location.png'
   restaurantLocation.alt = 'Pizza Town\'s restaurant location'
   form.appendChild(restaurantLocation)
 

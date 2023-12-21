@@ -14,7 +14,7 @@
 /* Body Styles */
 body {
   font-family: 'Montserrat', cursive;
-  background-image: url('../dist/images/background.jpg');
+  background-image: url('../images/background.jpg');
   background-attachment: fixed;
   background-size: cover;
 }
